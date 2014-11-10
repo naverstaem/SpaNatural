@@ -1,4 +1,4 @@
-@import "../css/bootstrap.min.css"
+//@import "../css/bootstrap.min.css"
 @import "../css/fonts/fonts.css"
 
 
@@ -12,13 +12,13 @@ label.error
 
 input, textarea
   +placeholder
-    font-size: 16px
+    font-size: 13px
     text-transform: none
-    color: #acacac
-    font-family: 'robotoitalic'
+    color: #9ea2ad
+    font-family: 'robotolight'
 
 .container
-  max-width: 965px
+  max-width: 1000px
 
 
 .title
@@ -32,26 +32,35 @@ input, textarea
   display: inline-block
   vertical-align: middle
   margin-top: 10px
-  margin-left: 10px
   .bl
     float: left
     text-align: center
-    margin: 0 3px
+    margin: 0 7px
     span
-      width: 42px
-      height: 54px
-      border: 1px solid rgba(29,30,31,.17)
-      +border-radius(4px)
-      +background-clip(padding-box)
-      +box-shadow(0 2px 2px rgba(29,30,31,.27))
-      +background-image(linear-gradient(to bottom, #fff 0%, #d1d3d3 50%, #c1bdbd 51%, #efefef 54%, #e1e1e1 100%))
+      width: 60px
+      height: 67px
       display: inline-block
-      font-family: 'robotocondensed'
-      font-size: 24px
-      color: #242833
-      padding-top: 10px
+      font-family: 'Conv_calibri'
+      font-size: 33px
+      color: #3f3f3f
+      padding-top: 4px
+      background: url(../img/counter_bg.png) no-repeat
+      position: relative
+
+      &:after
+        position: absolute
+        content: ":"
+        font-size: 32px
+        color: #292929
+        top: 2px
+        right: -11px
+      &.s
+        &:after
+          content: ""
+
+
     p
-      font-family: 'robotocondensed'
-      font-size: 12px
-      color: #242833
-      margin-top: 3px
+      font-family: 'robotolight'
+      font-size: 13px
+      color: #575577
+      margin-top: -6px
