@@ -436,6 +436,155 @@ header
           font-family: 'calibribold'
 
 
+
+.works
+  overflow: hidden
+  background: url(../img/works_bg.png) no-repeat  center
+  background-position-y: -540px
+  padding-bottom: 60px
+  font-size: 18px
+  color: #3f3f3f
+  font-family: 'conv_calibril'
+  .container
+  h2
+    &.first
+      position: relative
+      top: 40px
+    &.second
+      margin-top: 110px
+      margin-bottom: 65px
+
+  .item
+    p
+      margin-top: 6px !important
+    &.item1, &.item3
+      text-align: right
+    &.item2, &.item4
+      text-align: left
+      p
+        margin-left: 33px
+    &.item3, &.item4
+      margin-top: 45px
+  ul
+    padding-left: 15px
+    list-style: none
+    font-family: 'conv_calibril'
+    font-size: 16px
+    color: #3f3f3f
+    position: relative
+    z-index: 1
+    li
+      position: relative
+      margin-top: 30px
+      &:before
+        position: absolute
+        content: ""
+        top: 8px
+        left: -15px
+        +border-radius(50%)
+        background: rgb(255,179,197)
+        width: 6px
+        height: 6px
+  .gloves
+    margin-left: 70px
+    position: relative
+    font-size: 18px
+    color: #a9a7bc
+    font-family: 'bad_scriptregular'
+    margin-top: -35px
+    margin-bottom: 15px
+    z-index: -1
+    .h
+      position: absolute
+      top: 190px
+      left: -60px
+      text-align: center
+
+    .w
+      position: absolute
+      bottom: -6px
+      left: 130px
+    img
+      display: block
+
+
+.reviews
+  background: url(../img/reviews_bg.png) center center no-repeat
+  +background-size(cover)
+  padding-top: 70px
+  padding-bottom: 90px
+  text-align: center
+  .container
+    h2
+      color: #ffffff
+  .wave
+    display: inline-block
+    width: 140px
+    background: url(../img/wave2.png) center repeat-x
+    margin: 25px auto 45px
+    height: 17px
+  .item
+    display: inline-block
+    .head
+      text-align: left
+      .image
+        width: 60px
+        height: 60px
+        float: left
+        margin-right: 15px
+        position: relative
+        &:after
+          position: absolute
+          background: url(../img/dots.png) repeat
+          top: 5px
+          right: -5px
+          content: ""
+          width: 100%
+          z-index: 0
+          height: 60px
+          +border-radius(50%)
+        img
+          display: block
+          +border-radius(50%)
+          position: relative
+          z-index: 1
+      h3
+        font-family: 'calibribold'
+        color: #ffffff
+        font-size: 22px
+        font-weight: normal
+        +text-shadow(0 1px 0 rgba(0,0,0,.15))
+      h4
+        font-size: 13px
+        color: #dbd9ef
+        font-weight: normal
+        font-family: 'conv_calibril'
+    .review-out
+      background: url(../img/dots.png) repeat
+      +border-radius(14px)
+      .review
+        position: relative
+        top: -7px
+        left: -7px
+        text-align: left
+        padding: 25px
+        margin-top: 43px
+        background: #ffffff
+        +border-radius(14px)
+        width: 100%
+        font-family: 'conv_calibril'
+        font-size: 14px
+        color: #3f3f3f
+        +box-shadow(0 1px 3px rgba(0,0,0,.26), inset 0 -1px 0 #fff)
+        &:before
+          position: absolute
+          content: ""
+          background: url(../img/review-popup.png) no-repeat
+          width: 26px
+          height: 14px
+          top: -9px
+          left: 21px
+
 .other
   padding-top: 20px
   text-align: center
