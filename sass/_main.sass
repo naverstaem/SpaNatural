@@ -238,6 +238,7 @@ header
 
 .about
   padding-top: 30px
+  padding-bottom: 60px
   .container
     .row
       &:last-child
@@ -267,11 +268,12 @@ header
       margin-top: -50px
 
 .testimony
-  background: url(../img/testimony_bg.jpg) no-repeat center center
+  background: url(../img/testimony_bg.png) no-repeat center center
   +background-size(cover)
   padding-top: 70px
   padding-bottom: 80px
   text-align: center
+  position: relative
   .container
   h2
     color: #ffffff
@@ -377,6 +379,61 @@ header
 
 .composition
   padding-top: 70px
+  padding-bottom: 60px
+  background: url(../img/composition_bg.png) no-repeat center center
+  +background-size(cover)
+  margin-top: -5px
+  h2
+  .title-wrapper
+    text-align: center
+    position: relative
+    margin: 50px auto
+    span
+      background: url(../img/wave3.png) no-repeat
+      height: 5px
+      width: 20%
+      max-width: 138px
+      +cover
+      display: inline-block
+      content: ""
+      vertical-align: middle
+    h3
+      padding: 0 30px
+      display: inline-block
+      margin: 0
+      position: relative
+      font-family: 'Conv_calibri'
+      font-size: 28px
+      color: #3f3f3f
+      vertical-align: middle
+
+  .inside
+    text-align: center
+    .inside-item
+      display: inline-block
+      .inside-img
+        width: 130px
+        height: 130px
+        background: #ffffff
+        +border-radius(50%)
+        +box-shadow(black 0 15px 17px -17px)
+        position: relative
+        overflow: hidden
+        display: inline-block
+        margin-bottom: 10px
+        img
+          position: absolute
+          top: 50%
+          left: 50%
+          +transform(translate(-50%,-50%))
+
+      p
+        font-family: 'conv_calibril'
+        font-size: 16px
+        color: #3f3f3f
+        span
+          font-size: 20px
+          font-family: 'calibribold'
 
 
 .other
