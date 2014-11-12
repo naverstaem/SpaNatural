@@ -1945,7 +1945,7 @@ header .nav-shadow { content: ""; width: 100%; background: url(../img/nav-shadow
 .about .container .title-wrapper h2 { display: inline-block; position: relative; background: #ffffff; padding: 0 40px; margin: 0; }
 .about .container p { font-family: "conv_calibril"; color: #3f3f3f; font-size: 16px; }
 .about .container p span { font-family: "calibribold"; }
-.about .container img { margin-top: -50px; }
+.about .container img { margin-top: -50px; width: 100%; max-width: 285px; }
 
 .testimony { background: url(../img/testimony_bg.png) no-repeat center center; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-top: 70px; padding-bottom: 80px; text-align: center; position: relative; }
 .testimony h2 { color: #ffffff; font-size: 48px; margin: 0; letter-spacing: -1px; }
@@ -2069,3 +2069,6 @@ footer .order-right a:hover { text-decoration: none; }
 .thanks .modal-body h3 { font-size: 40px; color: #3f3f3f; font-weight: normal; font-family: "pt_serifbold"; line-height: 0.8em; }
 .thanks .modal-body h3 span { font-size: 26px; }
 .thanks .modal-body p { font-family: "conv_calibril"; font-size: 18px; color: #6a6a6a; padding: 0 35px; margin-top: 15px; }
+
+@media(max-width: 767px) { .navbar-nav { margin: 0; }
+  h1, h2 { font-size: 24px !important; } }
