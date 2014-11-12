@@ -1,12 +1,12 @@
 
 head.ready(function() {
 
-	$('#thumbnails li').click(function(){
-		var srcLink = $(this).attr('data-src');
-		$('.active').removeClass('active');
-		$(this).addClass('active');
-		$('.slider img').attr('src', srcLink);
-	});
+	//$('#thumbnails li').click(function(){
+	//	var srcLink = $(this).attr('data-src');
+	//	$('.active').removeClass('active');
+	//	$(this).addClass('active');
+	//	$('.slider img').attr('src', srcLink);
+	//});
 
 	// Counter
 
@@ -38,7 +38,12 @@ head.ready(function() {
 
 	timer = setInterval(showRemaining, 1000);
 
-	$('.root-b.b1 form').validate();
+	$('#form1').validate();
+	$('#form2').validate();
+	$('#form3').validate();
+	$('#form4').validate();
+	$('#form5').validate();
+	$('#form6').validate();
 
 
 	$('.navbar-nav a').on('click',function (e) {
